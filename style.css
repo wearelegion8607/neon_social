@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    --insta : #ff1b6b;
+    --vk : #055eff;
+    --google : #ff0e2e;
+    --twit : #49f0ff;
+    --face : #27f8ff;
+    --time_animation : 0.2s;
+    --glow : 20px;
+
+}
+.container{
+    height: 100vh;
+    background-color: #262636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.social{
+    color: white;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    min-width: 450px;
+
+}
+.social__item{
+    display: flex;
+    cursor: pointer;
+    font-size: 27px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.twit:hover{
+    border-color: var(--twit);
+    box-shadow: 0 0 var(--glow) var(--twit);
+    color: var(--twit);
+    transition: all linear var(--time_animation);
+
+}
+.vk:hover{
+
+    border-color: var(--vk);
+    box-shadow: 0 0 var(--glow) var(--vk);
+    color: var(--vk);
+    transition: all linear var(--time_animation);
+}
+.google:hover{
+    border-color: var(--google);
+    box-shadow: 0 0 var(--glow) var(--google);
+    color: var(--google);
+    transition: all linear var(--time_animation);
+}
+.insta:hover{
+    border-color: var(--insta);
+    box-shadow: 0 0 var(--glow) var(--insta);
+    color: var(--insta);
+    transition: all linear var(--time_animation);
+}
+.face:hover{
+    border-color: var(--face);
+    box-shadow: 0 0 var(--glow) var(--face);
+    color: var(--face);
+    transition: all linear var(--time_animation);
+}
